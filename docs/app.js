@@ -35,7 +35,8 @@ async function main() {
     imageTag.classList.add("img-fluid");
     imageTag.src = image; // image - link
     const descTag = document.createElement("p");
-    descTag.innerHTML = `<pre>${marked.parse(desc)}</pre>`;
+    descTag.id = "markdownBox";
+    descTag.innerHTML = `${marked.parse(desc)}`;
     box.appendChild(imageTag);
     box.appendChild(descTag);
   }
