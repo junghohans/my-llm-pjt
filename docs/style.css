@@ -1,0 +1,79 @@
+/* Global font */
+* {
+  font-family: "Galmuri9", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Dark mode styles */
+body {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+/* Styling for pre tag to prevent font overwriting */
+pre {
+  word-wrap: break-word; /* 긴 단어가 잘리도록 */
+  word-break: break-all; /* 단어가 너무 길면 자동으로 줄 바꿈 */
+  font-family: "Courier New", monospace !important;
+  background-color: #1e1e1e;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Custom button styling */
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Flexbox styling for form and content */
+#ccForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Responsive layout for mobile */
+@media (max-width: 576px) {
+  .container {
+    padding: 10px;
+  }
+
+  #ccForm input,
+  #ccForm button {
+    width: 100%;
+  }
+}
+
+/* Code block styling */
+code {
+  font-family: "Courier New", monospace;
+  background-color: #f4f4f4;
+  padding: 2px 5px;
+  border-radius: 3px;
+}
+
+/* Custom markdown styling */
+.markdown-container {
+  color: #fff;
+}
+
+.markdown-container h1,
+.markdown-container h2,
+.markdown-container h3 {
+  color: #fff;
+}
