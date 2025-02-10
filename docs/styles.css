@@ -19,7 +19,6 @@ p {
 }
 
 #box {
-  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -37,6 +36,11 @@ pre {
   background-color: #1e1e1e;
   padding: 10px;
   border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
   display: flex;
   justify-content: center;
   align-items: center;

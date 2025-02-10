@@ -35,7 +35,7 @@ async function main() {
     imageTag.classList.add("img-fluid");
     imageTag.src = image; // image - link
     const descTag = document.createElement("p");
-    descTag.innerHTML = `<br><pre>${marked.parse(desc)}</pre>`;
+    descTag.innerHTML = `<pre>${marked.parse(desc)}</pre>`;
     box.appendChild(imageTag);
     box.appendChild(descTag);
   }
