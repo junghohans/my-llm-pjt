@@ -47,6 +47,7 @@ pre {
   align-items: center;
   white-space: pre-wrap; /* 줄바꿈이 가능하도록 */
   word-wrap: break-word; /* 긴 단어가 잘리도록 */
+  width: 100%;
 }
 
 img {
