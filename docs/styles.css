@@ -14,14 +14,10 @@
       font-style: normal; */
 }
 
-@font-face {
-  font-family: "Galmuri";
-  src: url("https://fastly.jsdelivr.net/npm/galmuri@latest/dist/galmuri.woff2")
-    format("woff2");
-}
+@import url("https://cdn.jsdelivr.net/npm/galmuri/dist/galmuri.css");
 
 * {
   /* font-family: "Pretendard-Regular"; */
   /* font-family: "PartialSansKR-Regular"; */
-  font-family: "Galmuri", sans-serif;
+  font-family: Galmuri9, sans-serif;
 }
