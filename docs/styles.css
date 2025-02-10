@@ -21,3 +21,8 @@
   /* font-family: "PartialSansKR-Regular"; */
   font-family: Galmuri9, sans-serif;
 }
+
+pre {
+  word-wrap: break-word; /* 긴 단어가 잘리도록 */
+  word-break: break-all; /* 단어가 너무 길면 자동으로 줄 바꿈 */
+}
