@@ -33,6 +33,7 @@ p {
 body {
   background-color: #121212;
   color: #ffffff;
+  overflow-x: hidden;
 }
 
 /* Styling for pre tag to prevent font overwriting */
@@ -44,11 +45,13 @@ pre {
   border-radius: 5px;
   justify-content: center;
   align-items: center;
+  white-space: pre-wrap; /* 줄바꿈이 가능하도록 */
+  word-wrap: break-word; /* 긴 단어가 잘리도록 */
 }
 
 img {
-  max-width: 30%; /* 부모 요소 크기에 맞게 자동 조정 */
-  height: auto;
+  max-width: 50% !important; /* 부모 요소 크기에 맞게 자동 조정 */
+  height: auto !important;
 }
 
 /* Custom button styling */
