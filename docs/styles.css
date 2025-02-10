@@ -1,8 +1,27 @@
 /* Global font */
+@import url("https://cdn.jsdelivr.net/npm/galmuri/dist/galmuri.css");
+
 * {
-  font-family: "Galmuri9", sans-serif;
+  font-family: Galmuri9, sans-serif !important;
   margin: 0;
   padding: 0;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Dark mode styles */
@@ -15,10 +34,12 @@ body {
 pre {
   word-wrap: break-word; /* 긴 단어가 잘리도록 */
   word-break: break-all; /* 단어가 너무 길면 자동으로 줄 바꿈 */
-  font-family: "Courier New", monospace !important;
   background-color: #1e1e1e;
   padding: 10px;
   border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Custom button styling */
@@ -61,7 +82,6 @@ button:hover {
 
 /* Code block styling */
 code {
-  font-family: "Courier New", monospace;
   background-color: #f4f4f4;
   padding: 2px 5px;
   border-radius: 3px;
