@@ -1,7 +1,8 @@
 async function main() {
   async function hanldeCC(event) {
     event.preventDefault(); // Form의 기본 submit 막아줘야하고...
-
+    const box = document.querySelector("#box");
+    box.innerHTML = "";
     // 로딩을 추가했다가...
     const spinner = document.createElement("div");
     spinner.classList.add("spinner-border");
@@ -30,13 +31,11 @@ async function main() {
 
     const { image, desc } = json;
 
-    const box = document.querySelector("#box");
-    box.innerHTML = "";
     const imageTag = document.createElement("img");
     imageTag.classList.add("img-fluid");
     imageTag.src = image; // image - link
     const descTag = document.createElement("p");
-    descTag.innerHTML = `<pre>${marked.parse(desc)}</pre>`;
+    descTag.innerHTML = `<br><pre>${marked.parse(desc)}</pre>`;
     box.appendChild(imageTag);
     box.appendChild(descTag);
   }
