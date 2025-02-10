@@ -7,6 +7,11 @@
   padding: 0;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 h1 {
   display: flex;
   justify-content: center;
@@ -19,6 +24,7 @@ p {
 }
 
 #box {
+  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -41,14 +47,13 @@ pre {
 }
 
 img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  max-width: 30%; /* 부모 요소 크기에 맞게 자동 조정 */
+  height: auto;
 }
 
 /* Custom button styling */
 button {
-  background-color: #007bff;
+  background-color: #505050 !important;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -56,8 +61,15 @@ button {
   cursor: pointer;
 }
 
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
 button:hover {
-  background-color: #0056b3;
+  background-color: #505050 !important;
 }
 
 /* Flexbox styling for form and content */
